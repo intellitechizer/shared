@@ -1,0 +1,74 @@
+#login-error {
+  color: #ff0000;
+}
+
+.costumspinner {
+  display: none;
+}
+
+#error {
+  color: #ff0000;
+  font-size: 13px;
+}
+
+/* ---------------- Login ---------------- */
+.login-form .customer-login {
+  border: 1px solid #e4dbdb;
+  padding: 30px;
+  margin-top: 15px;
+  background-color: #fbfaf8;
+}
+
+.login-form .login-divider h6 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #e4dbdb;
+  line-height: 0.1em;
+  margin: 25px 0 20px;
+}
+
+.login-form .login-divider h6 span {
+  background: #fff;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.login-form .btn-success {
+  color: #fff;
+  background-color: #5d442c;
+  border-color: #064578;
+}
+
+.login-form .btn-success:hover {
+  color: #fff;
+  background-color: #ffa821;
+  border-color: #064578;
+  outline: none;
+}
+
+.login-form .login-botton a {
+  color: #000;
+}
+
+.login-form .login-rights {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-form .login-forgot-pass {
+  font-size: 16px;
+}
+
+.login-form .btn-success:not(:disabled):not(.disabled).active,
+.btn-success:not(:disabled):not(.disabled):active,
+.show > .btn-success.dropdown-toggle {
+  background-color: #f35608;
+  border-color: #054674;
+}
+
+.login-form button:focus {
+  outline: none;
+  background-color: #f35608;
+  border-color: #054674;
+}

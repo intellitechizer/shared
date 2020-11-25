@@ -1,0 +1,58 @@
+<div class="container login-form">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <div class="customer-login">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center">
+              <a [routerLink]="['/']"><img src="assets/img/logo.png" width="100" /></a>
+            </div>
+          </div>
+        </div>
+        <h3>Admin Login</h3>
+        <hr />
+        <form [formGroup]="formAdminLogin" (ngSubmit)="onSubmitAdminLogin()">
+          <div class="form-group">
+            <label>User Name <em>*</em></label>
+            <span class="error-text"
+              *ngIf="submitted && formAdminLogin.controls.EmailOrMobileOrUserName.errors?.required">
+              required
+            </span>
+            <input type="text" formControlName="EmailOrMobileOrUserName"
+              placeholder="Enter User Name" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label>Password <em>*</em></label>
+            <span class="error-text" *ngIf="submitted && formAdminLogin.controls.Password.errors?.required">
+              required
+            </span>
+            <input type="password" formControlName="Password" placeholder="Enter Password" class="form-control" />
+          </div>
+          <span id="error"></span>
+          <div class="form-group">
+            <button id="btn-admin-login" class="btn btn-block btn-success">
+              <span *ngIf="loginStatus">Sign In</span>
+              <span *ngIf="pleaseWait">
+                <img src="assets/img//loaders/loading.gif" width="22" />
+                login...
+              </span>
+            </button>
+          </div>
+        </form>
+        <div class="login-forgot-pass">
+          Forget password ?
+          <a [routerLink]="['/forgot-password']">Click here</a>.
+        </div>
+
+        <div class="login-divider">
+          <h6>
+            <span>Baitul Ma'arif</span>
+          </h6>
+        </div>
+      </div>
+      <div class="login-rights">
+        © 2019-2020, All rights reserved by Baitul Ma'arif.
+      </div>
+    </div>
+  </div>
+</div>
